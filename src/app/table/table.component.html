@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th *ngFor="let row of rows">
+      {{row}}
+      
+    </th>
+           <a href="#/viewdetail" type="submit"  name="viewdetails" ng-click="detail(x.id)"> view</a>
+  </tr>
+  <tr *ngFor="let us of users | async">
+    <td *ngFor="let row of rows">
+      {{us[row]}} 
+    </td>
+  </tr>
+  <tr>
+         <a href="#/viewdetail" type="submit"  name="viewdetails" ng-click="detail(x.id)"> view</a>
+  </tr>
+  
+</table>

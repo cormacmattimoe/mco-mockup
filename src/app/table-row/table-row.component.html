@@ -1,0 +1,7 @@
+
+  <td *ngFor="let row of rows; last as isLast">
+    <div *ngIf="isLast" class="component-tag-sm">
+      <span>app-table-row</span>
+    </div>
+    {{users[row]}}
+  </td>
