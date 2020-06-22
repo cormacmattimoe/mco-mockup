@@ -1,18 +1,17 @@
-<table>
+ <table class="table table-dark table-hover">
+ <tbody>
   <tr>
+  
     <th *ngFor="let row of rows">
       {{row}}
       
     </th>
-           <a href="#/viewdetail" type="submit"  name="viewdetails" ng-click="detail(x.id)"> view</a>
   </tr>
   <tr *ngFor="let us of users | async">
     <td *ngFor="let row of rows">
       {{us[row]}} 
+      
     </td>
+     <a href="#/viewdetail" type="submit"  name="viewdetails" ng-click="detail(us.row)"> view</a>
   </tr>
-  <tr>
-         <a href="#/viewdetail" type="submit"  name="viewdetails" ng-click="detail(x.id)"> view</a>
-  </tr>
-  
 </table>
